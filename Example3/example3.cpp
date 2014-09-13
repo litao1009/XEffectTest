@@ -11,8 +11,6 @@ using namespace scene;
 using namespace video;
 using namespace core;
 
-#pragma comment(lib, "irrlicht.lib")
-
 // We need to pass the view projection matrix to the SSAO shader, so we create a class that inherits from
 // IPostProcessingRenderCallback and pass the shader constant in OnPreRender using setPostProcessingEffectConstant.
 class SSAORenderCallback : public IPostProcessingRenderCallback

@@ -11,8 +11,6 @@ using namespace scene;
 using namespace video;
 using namespace core;
 
-#pragma comment(lib, "irrlicht.lib")
-
 int main()
 {
 	char C = 0;

@@ -10,10 +10,6 @@
 #include "ICameraSceneNode.h"
 #include "ISceneNodeAnimatorCollisionResponse.h"
 
-#include <string>
-#include <iostream>
-#include <windows.h>
-
 namespace irr
 {
 namespace scene
@@ -265,9 +261,6 @@ void CSceneNodeAnimatorCameraFPS::animateNode(ISceneNode* node, u32 timeMs)
 	// write right target
 	target += pos;
 	camera->setTarget(target);
-
-	auto str = std::string("Target:") + std::to_string(target.X) + "," + std::to_string(target.Y) + "," + std::to_string(target.Z) + "\n";
-	OutputDebugString(str.c_str());
 }
 
 

@@ -51,7 +51,15 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dbg1.8|Win32'">
+    <IntDir>$(SolutionDir)Obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dbg1.7|Win32'">
+    <IntDir>$(SolutionDir)Obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Rel1.7|Win32'">
+    <IntDir>$(SolutionDir)Obj\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dbg1.7|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -67,7 +75,7 @@
       <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Project\XEffectTest\Debug\XEffect1.7.lib;G:\Project\XEffectTest\irrlicht-1.7.3\lib\Win32-visualstudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Project\XEffectTest\Debug\XEffect1.8.lib;G:\Project\XEffectTest\irrlicht-1.8\lib\Win32-VisualStudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Project\XEffectTest\Debug\XEffect1.8.lib;G:\Project\XEffectTest\irrlicht-1.8\lib\Win32-VisualStudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies>$(SolutionDir)Debug\XEffect1.7.lib;$(SolutionDir)irrlicht-1.7.3\lib\Win32-visualstudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Debug\XEffect1.7.lib;$(SolutionDir)Static lib - Debug\Irrlicht1.7.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dbg1.8|Win32'">
@@ -80,7 +88,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Debug\XEffect1.8.lib;$(SolutionDir)irrlicht-1.8\lib\Win32-VisualStudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Debug\XEffect1.8.lib;$(SolutionDir)Static lib - Debug\Irrlicht1.8.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Rel1.7|Win32'">
