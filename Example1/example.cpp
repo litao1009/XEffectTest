@@ -118,6 +118,7 @@ int main()
 	// Load the dwarf mesh.
 	IAnimatedMesh* dwarfmesh = smgr->getMesh("media/dwarf.x");
 
+	
 	// We create 4 dwarves arranged in a grid in a nested loop.
 	for(int g = 0;g < 2;g++)
 	{
