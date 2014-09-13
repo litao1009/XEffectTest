@@ -356,11 +356,15 @@ void EffectHandler::update(irr::video::ITexture* outputTarget)
 			ScreenQuad.render(driver);
 			/*
 			{
+				driver->setRenderTarget(0, false, false);
+
 				auto img0 = driver->createImageFromData(ScreenQuad.rt[0]->getColorFormat(), ScreenQuad.rt[0]->getSize(), ScreenQuad.rt[0]->lock(), false, false);
-				driver->writeImageToFile(img0, "sr0.png");
+				driver->writeImageToFile(img0, "sr0-1.7.png");
 				ScreenQuad.rt[0]->unlock();
+
 				auto img1 = driver->createImageFromData(ScreenQuad.rt[1]->getColorFormat(), ScreenQuad.rt[1]->getSize(), ScreenQuad.rt[1]->lock(), false, false);
-				driver->writeImageToFile(img1, "sr1.png");
+				driver->writeImageToFile(img1, "sr1-1.7.png");
+				auto clr1 = img1->getPixel(0,0);
 				ScreenQuad.rt[1]->unlock();
 			}*/
 		}

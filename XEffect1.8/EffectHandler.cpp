@@ -349,22 +349,14 @@ void EffectHandler::update(irr::video::ITexture* outputTarget)
 				}
 			}
 
-			driver->setRenderTarget(ScreenQuad.rt[0], false, false, SColor(0x0));
+			driver->setRenderTarget(ScreenQuad.rt[0], false, false);
 
 			ScreenQuad.getMaterial().setTexture(0, ScreenQuad.rt[1]);
 			ScreenQuad.getMaterial().MaterialType = (E_MATERIAL_TYPE)Simple;
+			auto blendFunc = ScreenQuad.getMaterial().BlendOperation;
+			ScreenQuad.getMaterial().BlendOperation = EBO_ADD;
 			ScreenQuad.render(driver);
-			/*
-			{
-				auto img0 = driver->createImageFromData(ScreenQuad.rt[0]->getColorFormat(), ScreenQuad.rt[0]->getSize(), ScreenQuad.rt[0]->lock(), false, false);
-				driver->writeImageToFile(img0, "sr0-1.8.png");
-				auto clr0 = img0->getPixel(258,438);
-				ScreenQuad.rt[0]->unlock();
-				auto img1 = driver->createImageFromData(ScreenQuad.rt[1]->getColorFormat(), ScreenQuad.rt[1]->getSize(), ScreenQuad.rt[1]->lock(), false, false);
-				driver->writeImageToFile(img1, "sr1-1.8.png");
-				auto clr1 = img1->getPixel(0,0);
-				ScreenQuad.rt[1]->unlock();
-			}*/
+			ScreenQuad.getMaterial().BlendOperation = blendFunc;
 		}
 
 		// Render all the excluded and casting-only nodes.

@@ -237,7 +237,7 @@ public:
 
 		if ((material.MaterialType != lastMaterial.MaterialType) || resetAllRenderstates)
 		{
-			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_COLOR);
+			glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_COLOR);
 			glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 			glEnable(GL_BLEND);
 		}
