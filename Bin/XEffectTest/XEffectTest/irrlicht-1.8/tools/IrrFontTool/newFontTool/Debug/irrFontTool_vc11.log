@@ -1,0 +1,20 @@
+﻿生成启动时间为 2014/8/26 11:58:35。
+     1>项目“G:\Project\irrlicht-1.8\irrlicht-1.8\tools\IrrFontTool\newFontTool\irrFontTool_vc11.vcxproj”在节点 4 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\FontTool.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../../../bin/Win32-visualstudio/FontTool.exe" /INCREMENTAL /NOLOGO /LIBPATH:"../../../lib/Win32-visualstudio" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\..\..\bin\Win32-VisualStudio\FontTool.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /IMPLIB:"..\..\..\bin\Win32-VisualStudio\FontTool.lib" /MACHINE:X86 /SAFESEH  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib glu32.lib opengl32.lib gdi32.lib Debug\CFontTool.obj
+         Debug\main.obj
+         "G:\Project\irrlicht-1.8\irrlicht-1.8\lib\Win32-visualstudio\Irrlicht.lib"
+     1>CFontTool.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+         irrFontTool_vc11.vcxproj -> G:\Project\irrlicht-1.8\irrlicht-1.8\tools\IrrFontTool\newFontTool\..\..\..\bin\Win32-VisualStudio\FontTool.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\FontTool.unsuccessfulbuild”。
+         正在对“Debug\FontTool.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\Project\irrlicht-1.8\irrlicht-1.8\tools\IrrFontTool\newFontTool\irrFontTool_vc11.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.61
