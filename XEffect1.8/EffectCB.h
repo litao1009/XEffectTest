@@ -102,10 +102,6 @@ public:
 
 			TexVar = 3;
 			services->setPixelShaderConstant("UserMapSampler", &TexVar, 1);
-
-			auto clr = effect->getAmbientColor();
-			video::SColorf clrf(clr);
-			services->setPixelShaderConstant("AmbientColour", reinterpret_cast<f32*>(&clrf.r), 4);
 		}
 
 		if(defaultVertexShader)

@@ -59,11 +59,11 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_IRR_STATIC_LIB_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Project\XEffectTest\XEffect1.7;G:\Project\XEffectTest\irrlicht-1.7.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalIncludeDirectories>G:\Project\XEffectTest\XEffect1.7;G:\Project\XEffectTest\irrlicht-1.7.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)XEffect1.7;$(SolutionDir)irrlicht-1.7.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>G:\Project\XEffectTest\Debug\XEffect1.7.lib;G:\Project\XEffectTest\irrlicht-1.7.3\lib\Win32-visualstudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Debug\XEffect1.7.lib;$(SolutionDir)irrlicht-1.7.3\lib\Win32-visualstudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dbg1.8|Win32'">
@@ -72,11 +72,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_IRR_STATIC_LIB_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>G:\Project\XEffectTest\XEffect1.8;G:\Project\XEffectTest\irrlicht-1.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)XEffect1.8;$(SolutionDir)irrlicht-1.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>G:\Project\XEffectTest\Debug\XEffect1.8.lib;G:\Project\XEffectTest\irrlicht-1.8\lib\Win32-VisualStudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Debug\XEffect1.8.lib;$(SolutionDir)irrlicht-1.8\lib\Win32-VisualStudio\Irrlicht.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Rel1.7|Win32'">

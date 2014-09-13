@@ -11,14 +11,13 @@ enum E_SHADER_EXTENSION
 
 const char* LIGHT_MODULATE_P[ESE_COUNT] = {"uniform sampler2D ColorMapSampler;\n"
 "uniform sampler2D ScreenMapSampler;\n"
-"uniform vec4 AmbientColour;\n"
 ""
 "void main() "
 "{		"
 "	vec4 finalCol = texture2D(ColorMapSampler, gl_TexCoord[0].xy);\n"
 "	vec4 lightCol = texture2D(ScreenMapSampler, gl_TexCoord[0].xy);\n"
 ""
-"	gl_FragColor = finalCol * (lightCol+AmbientColour);\n"
+"	gl_FragColor = finalCol * lightCol;\n"
 "}"
 ,
 "sampler2D ColorMapSampler : register(s0);\n"

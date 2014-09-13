@@ -6,8 +6,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Irrlicht1.8", "irrlicht-1.8\source\Irrlicht\Irrlicht11.0.vcxproj", "{1EE918BD-E3EA-45CE-862D-06706AAB27F0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XEffect1.7", "XEffect1.7\XEffect1.7.vcxproj", "{C2710C8A-0121-4022-AFF3-9877F408AA17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E08E042A-6C45-411B-92BE-3CC31331019F} = {E08E042A-6C45-411B-92BE-3CC31331019F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XEffect1.8", "XEffect1.8\XEffect1.8.vcxproj", "{E3B3D48C-95DB-42B6-BF8B-B668D2AC020F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1EE918BD-E3EA-45CE-862D-06706AAB27F0} = {1EE918BD-E3EA-45CE-862D-06706AAB27F0}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example1", "Example1\Example1.vcxproj", "{CFC29ACA-A31A-46E8-807B-22A6E7A642B8}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -56,16 +62,20 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E08E042A-6C45-411B-92BE-3CC31331019F}.Dbg1.7|Win32.ActiveCfg = Static lib - Debug|Win32
+		{E08E042A-6C45-411B-92BE-3CC31331019F}.Dbg1.7|Win32.Build.0 = Static lib - Debug|Win32
 		{E08E042A-6C45-411B-92BE-3CC31331019F}.Dbg1.7|x64.ActiveCfg = Static lib - Debug|Win32
 		{E08E042A-6C45-411B-92BE-3CC31331019F}.Dbg1.8|Win32.ActiveCfg = Static lib - Debug|Win32
+		{E08E042A-6C45-411B-92BE-3CC31331019F}.Dbg1.8|Win32.Build.0 = Static lib - Debug|Win32
 		{E08E042A-6C45-411B-92BE-3CC31331019F}.Dbg1.8|x64.ActiveCfg = Static lib - Debug|Win32
 		{E08E042A-6C45-411B-92BE-3CC31331019F}.Rel1.7|Win32.ActiveCfg = Static lib - Release|Win32
 		{E08E042A-6C45-411B-92BE-3CC31331019F}.Rel1.7|Win32.Build.0 = Static lib - Release|Win32
 		{E08E042A-6C45-411B-92BE-3CC31331019F}.Rel1.7|x64.ActiveCfg = Static lib - Release|Win32
 		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.7|Win32.ActiveCfg = Static lib - Debug|Win32
+		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.7|Win32.Build.0 = Static lib - Debug|Win32
 		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.7|x64.ActiveCfg = Static lib - Debug|x64
 		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.7|x64.Build.0 = Static lib - Debug|x64
 		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.8|Win32.ActiveCfg = Static lib - Debug|Win32
+		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.8|Win32.Build.0 = Static lib - Debug|Win32
 		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.8|x64.ActiveCfg = Static lib - Debug|x64
 		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Dbg1.8|x64.Build.0 = Static lib - Debug|x64
 		{1EE918BD-E3EA-45CE-862D-06706AAB27F0}.Rel1.7|Win32.ActiveCfg = Static lib - Release|Win32
